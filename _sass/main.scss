@@ -1,0 +1,220 @@
+// Colors
+$primary-color: #e74c3c;
+$secondary-color: #34788c;
+.brand-color {
+	color: $primary-color;
+}
+.secondary-color {
+	color: lighten($secondary-color, 10%);
+}
+
+body {
+	font-size: 16px;
+}
+.add-pad {
+	padding-top: 50px;
+}
+.btn-ghost {
+	border: 1px solid #fff;
+	color: #fff;
+	background: transparent;
+	&:hover {
+		color: #333;
+		background: #fff;
+	}	
+}
+.brand-font {
+	font-family: 'Passion One', cursive;
+	text-transform: uppercase;
+}
+.secondary-font {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+.btn-brand {
+	color:#fff;
+	background:$primary-color;
+	border-color: $primary-color;
+	border-width: 2px;
+	border-radius: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	&:hover {
+		background: transparent;
+		color:$primary-color;
+	}
+}
+.navbar-custom {
+	background-color: transparent;
+	border: none;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	.navbar-brand {
+		&:hover {
+			color: $primary-color;
+		}
+	}
+	.navbar-nav > li > a {
+		&:hover {
+			color: $primary-color;
+		}
+	}
+	li.action-link {
+		margin-top: 15px;
+		padding-right: 15px;
+		a {
+			color: $primary-color;
+			border: 2px solid $primary-color;
+			border-radius: 3px;
+			padding: 8px;
+			text-transform: uppercase;
+			&:hover {
+				background: $primary-color;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.divide-sm {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 3px solid $primary-color;
+	width: 100px;
+}
+.lead {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+section {
+	position: relative;
+	clear: both;
+}
+#top {
+	background-image: url('../images/top-bg.jpg');
+	background-position: bottom center;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	position: relative;
+	background-color: #1a292b;
+	.brand-intro {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+		span {
+			mix-blend-mode: exclusion;
+		}
+		img {
+			margin-bottom: 20px;
+		}
+	}
+	.alert-message {
+		position: absolute;
+		top: 100px;
+		z-index: 100;
+		left: 0;
+		width: 100%;
+	}
+}
+#about {
+	background: #fff;
+	color: #333;
+	.inner {
+		
+	}
+}
+#mid-divide {
+	background-image: url('../images/midbg.jpg');
+	background-position: top center;
+	background-repeat:no-repeat;
+	background-color: #1a292b;
+}
+#services {
+	background: #fff;
+	border-top: 5px solid $primary-color;
+	padding: 100px 0;
+	.lead {
+		text-align: center;
+		padding: 0 0 100px 0;
+		small {
+			text-align: right;
+			display: block;
+			font-size: 14px;
+		}
+	}
+	.service {
+		margin: 15px 0 30px 0;
+		text-align: center;
+		h2 {
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 300;
+			text-align: center;
+		}
+	}
+}
+#testimonials {
+	background: #222;
+	border-top: 5px solid $secondary-color;
+	padding: 100px 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	h1 {
+		color: #fff;
+	}
+	.lead {
+		text-align: center;
+		padding: 50px 0;
+		color: #fff;
+	}
+	blockquote {
+		color: #fff;
+	}
+	a {
+		color: #777;
+		&:hover {
+			color: #ccc;
+		}
+	}
+}
+#contact {
+	background-color: #1a292b;
+	background-image: url("../images/bodybg.jpg");
+	border-top: 5px solid $primary-color;
+	padding: 100px 0;
+	color: #fff;
+	.lead {
+		text-align: center;
+		color: #fff;
+	}
+	label {
+		color: $primary-color;
+	}
+	form {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-weight: 300;
+	}
+	.credit {
+		text-align: center;
+		width: 100%;
+		display: block;
+		position: absolute;
+		bottom: 5px;
+		color: #444;
+		a {
+			color: #444;
+		}
+	}
+}
+.footer {
+	background: #111;
+	color: #fff;
+	border-top: 3px solid $secondary-color;
+	padding: 20px 0;
+	text-align: center;
+}
